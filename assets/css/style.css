@@ -32,3 +32,33 @@
   background-image    : url("/assets/img/cork.png");
   
  }
+
+ /*  i create a set of divs 600*600 with various colors
+ */
+
+ .box{
+  height  :600px;
+  width   :600px;
+ }
+
+
+ .box-red{
+  background-color  : red;
+  color             : white;
+ }
+
+ .box-purple{
+  background-color   : purple;
+  color              : white;
+ }
+
+ .box-blue{
+  background-color    : blue;
+  color               : white;
+ }
+
+ .box-black{
+  background-color    : black;
+  color               : white;
+ }
+
