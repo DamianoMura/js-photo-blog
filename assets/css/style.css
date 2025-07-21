@@ -3,30 +3,16 @@
   padding     : 0;
   box-sizing  : border-box;
 }
-/*  font class declaration
-*/
-.edu-tas-beginner-400 {
-  font-family         : "Edu TAS Beginner", sans-serif;
-  font-optical-sizing : auto;
-  font-weight         : 400;
-  font-style          : normal;
-}
 
-.edu-tas-beginner-900 {
+
+.heading {
   font-family         : "Edu TAS Beginner", sans-serif;
   font-optical-sizing : auto;
   font-weight         : 900;
   font-style          : normal;
-  font-size           : 3rem;
+  font-size           : 4rem;
 }
 
-.sometype-mono-400 {
-  font-family         : "Sometype Mono", monospace;
-  font-optical-sizing : auto;
-  font-weight         : 400;
-  font-style          : normal;
-  
-} 
 
 /*                   background image <main>
 */
@@ -38,19 +24,47 @@
 */
 
 .polaroid{
-  padding           : 10px;
+  padding           : 20px;
   background-color  : white;
   position          : relative;
 }
  
-.box{
+.polaroid-image{
   display          : flex;
   justify-content  : center;
   align-items      : center;
+  background-color: aqua; /* debug color because my image is transparent */
 }
 
-.box img{
+.pin{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translate(-18px,-9px);  
+}
+.polaroid-image img{
   width            : 100%;
+}
+
+.polaroid-title{
+  font-family: "Edu TAS Beginner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+.polaroid-description{
+  font-family: "Edu TAS Beginner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.polaroid-date{
+  font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
