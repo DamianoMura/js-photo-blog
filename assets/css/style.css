@@ -38,47 +38,21 @@
 */
 
 .polaroid{
-  padding           :10px;
+  padding           : 10px;
   background-color  : white;
-  position          :relative;
+  position          : relative;
 }
  /*  i create a set of divs 600*600 with various colors
  */
 
  .box{
-  height           :150px;
-  width            :150px;
-  display          :flex;
+  display          : flex;
   justify-content  : center;
   align-items      : center;
  }
-
-
- .box-green{
-  background-color  : green;
-  color             : white;
- }
- .box-grey{
-  background-color  : grey;
+ .box img{
+  width            : 100%;
  }
 
- .box-red{
-  background-color  : red;
-  color             : white;
- }
 
- .box-purple{
-  background-color   : purple;
-  color              : white;
- }
-
- .box-blue{
-  background-color    : blue;
-  color               : white;
- }
-
- .box-black{
-  background-color    : black;
-  color               : white;
- }
 
