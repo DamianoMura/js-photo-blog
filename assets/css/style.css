@@ -17,6 +17,7 @@
   font-optical-sizing : auto;
   font-weight         : 900;
   font-style          : normal;
+  font-size           : 3rem;
 }
 
 .sometype-mono-400 {
@@ -24,6 +25,7 @@
   font-optical-sizing : auto;
   font-weight         : 400;
   font-style          : normal;
+  
 }
 
 /*                   background image <main>
@@ -32,15 +34,33 @@
   background-image    : url("/assets/img/cork.png");
   
  }
+/*          polaroid class
+*/
 
+.polaroid{
+  padding           :10px;
+  background-color  : white;
+  position          :relative;
+}
  /*  i create a set of divs 600*600 with various colors
  */
 
  .box{
-  height  :600px;
-  width   :600px;
+  height           :150px;
+  width            :150px;
+  display          :flex;
+  justify-content  : center;
+  align-items      : center;
  }
 
+
+ .box-green{
+  background-color  : green;
+  color             : white;
+ }
+ .box-grey{
+  background-color  : grey;
+ }
 
  .box-red{
   background-color  : red;
