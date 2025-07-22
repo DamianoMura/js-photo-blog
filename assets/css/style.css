@@ -31,6 +31,7 @@ body{
   background-color  : white;
   position          : relative;
   border: 1px black solid;
+  transition: 0.5s;
 }
 
 .polaroid:hover{
