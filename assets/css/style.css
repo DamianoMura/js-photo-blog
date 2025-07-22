@@ -40,7 +40,7 @@ body{
   box-shadow: 10px 10px 10px black;
   cursor: pointer;
   transition: 0.5s;
-  scale : 1.1;
+  scale : 1.15;
 }
 .polaroid:hover .pin{
   display:none;
@@ -87,6 +87,7 @@ body{
 */
 .overlay{
   position: absolute;
+  padding-top:50px;
   top:0;
   height: 100%;
   width: 100%;
