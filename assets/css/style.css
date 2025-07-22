@@ -14,14 +14,14 @@
 }
 
 body{
-  position: relative;
+  position : relative;
 }
 
 /*                   background image <main>
 */
  main{
-  background-image    : url("/assets/img/cork.png");
-  padding: 20px 0;
+  background-image : url("/assets/img/cork.png");
+  padding          : 20px 0;
  }
 /*          polaroid class
 */
@@ -30,20 +30,20 @@ body{
   padding           : 20px;
   background-color  : white;
   position          : relative;
-  border: 1px black solid;
-  transition: 0.5s;
+  border            : 1px black solid;
+  transition        : 0.5s;
 }
 
 .polaroid:hover{
-  transform: rotate(10deg);
-  z-index: 2;
-  box-shadow: 10px 10px 10px black;
-  cursor: pointer;
-  transition: 0.5s;
-  scale : 1.15;
+  transform  : rotate(10deg);
+  z-index    : 2;
+  box-shadow : 10px 10px 10px black;
+  cursor     : pointer;
+  transition : 0.5s;
+  scale      : 1.15;
 }
 .polaroid:hover .pin{
-  display:none;
+  display : none;
 }
  
 .polaroid-image{
@@ -53,48 +53,48 @@ body{
 }
 
 .pin{
-  position:absolute;
-  top:0;
-  left:50%;
-  transform: translate(-18px,-9px);  
+  position  :absolute;
+  top       :0;
+  left      :50%;
+  transform : translate(-18px,-9px);  
 }
 .polaroid-image img{
-  width            : 100%;
+  width  : 100%;
 }
 
 .polaroid-title{
-  font-family: "Edu TAS Beginner", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
+  font-family         : "Edu TAS Beginner", sans-serif;
+  font-optical-sizing : auto;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 2rem;
 }
 .polaroid-description{
-  font-family: "Edu TAS Beginner", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family           : "Edu TAS Beginner", sans-serif;
+    font-optical-sizing : auto;
+    font-weight         : 400;
+    font-style          : normal;
 }
 
 .polaroid-date{
-  font-family: "Sometype Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family           : "Sometype Mono", monospace;
+    font-optical-sizing : auto;
+    font-weight         : 400;
+    font-style          : normal;
 }
 
 /*                      overlay
 */
 .overlay{
-  position: absolute;
-  padding-top:50px;
-  top:0;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position         : absolute;
+  padding-top      :50px;
+  top              :0;
+  height           : 100%;
+  width            : 100%;
+  z-index          : 3;
+  background-color : rgba(0, 0, 0, 0.7);
+  justify-content  : center;
+  align-items      : center;
+  flex-direction   : column;
 }
 
