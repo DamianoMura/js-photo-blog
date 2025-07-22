@@ -4,14 +4,15 @@
 const photoAlbum = document.getElementById('photo-album');
 const overlayBtn = document.getElementById('overlay-btn');
 const overlay    = document.getElementsByClassName('overlay')[0]
-console.log(overlay)
+// console.log(overlay) //debug
+
 overlayBtn.addEventListener('click',(e)=>{
   e.preventDefault();
   overlay.classList.replace('d-flex','d-none' )
 })
 
 axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
-  console.log(resp.data); // debug : checking what we have received after ajax call and cut the polaroid from the html file and transpose it here
+  // console.log(resp.data); // debug : checking what we have received after ajax call and cut the polaroid from the html file and transpose it here
   const infos = resp.data;
   for (let i=0 ; i<infos.length ; i++){
     // console.log(infos[i]) //debug
@@ -38,6 +39,16 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
           `
   }
   // infos.forEach((elem)=>{console.log(elem)})//debug
-  
+  const polaroids = document.querySelectorAll('.polaroid')
+  //lets see if i can find the id of the pic this way...
+  // console.log(polaroids[0].id[5]) //debug
+  polaroids.forEach((polaroid)=>{
+    // console.log(polaroid)//debug
+    polaroid.addEventListener('click',(e)=>{
+      e.preventDefault();
+      let id=polaroid.id[5];
+      console.log(id)
+    })
+  })
 })
 
