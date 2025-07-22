@@ -7,9 +7,9 @@ const overlay    = document.getElementsByClassName('overlay')[0]
 // console.log(overlay) //debug
 
 overlayBtn.addEventListener('click',(e)=>{
-  e.preventDefault();
-  overlay.classList.replace('d-flex','d-none' )
-})
+        e.preventDefault();
+        overlay.classList.replace('d-flex','d-none' )
+      })
 
 axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
   // console.log(resp.data); // debug : checking what we have received after ajax call and cut the polaroid from the html file and transpose it here
@@ -46,8 +46,19 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
     // console.log(polaroid)//debug
     polaroid.addEventListener('click',(e)=>{
       e.preventDefault();
+      //we assigned an automated id at each polaroid that goes image<num>
+      //so we can fetch the character in position 5 to find that value back
       let id=polaroid.id[5];
-      console.log(id)
+      // console.log(id) // debug
+      //we go and find that id in our array of objects and store whose id is the same
+      const selected = infos.find(info => info.id == polaroid.id[5])
+      // console.log(selected) // debug
+      //in the overlay the first child is the image so we change the src property and swap it with the url parameter of the object we had in the variable selected 
+      overlay.children[0].src=selected.url;
+      // console.log(overlay) //debug
+      overlay.classList.replace('d-none','d-flex' )
+      
+      
     })
   })
 })
