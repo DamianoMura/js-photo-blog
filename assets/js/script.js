@@ -8,7 +8,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
   const infos = resp.data;
   for (let i=0 ; i<infos.length ; i++){
     // console.log(infos[i]) //debug
-    photoAlbum.innerHTML+=` <!-- polaroid column to be replicated with javascript-->
+    photoAlbum.innerHTML+=`
           <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
             <div class="polaroid container">
               <img src="/assets/img/pin.svg" alt class="pin">
@@ -28,7 +28,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp) => {
               </div>
             </div>
           </div>
-          <!-- /polaroid column-->`
+          `
   }
 
 })
