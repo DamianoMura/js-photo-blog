@@ -21,7 +21,7 @@ body{
 */
  main{
   background-image    : url("/assets/img/cork.png");
-  overflow-y: auto;
+  padding: 20px 0;
  }
 /*          polaroid class
 */
@@ -30,6 +30,18 @@ body{
   padding           : 20px;
   background-color  : white;
   position          : relative;
+  border: 1px black solid;
+}
+
+.polaroid:hover{
+  transform: rotate(10deg);
+  z-index: 2;
+  box-shadow: 10px 10px 10px black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.polaroid:hover .pin{
+  display:none;
 }
  
 .polaroid-image{
@@ -77,8 +89,8 @@ body{
   top:0;
   height: 100%;
   width: 100%;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
   flex-direction: column;
